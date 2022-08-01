@@ -4,7 +4,7 @@ pipeline {
         stage('Configuration') {
             steps {
                 echo "STAGE: CONFIGURATION"
-                echo "${command}"
+                bat "python main.py"
             }
         }
     }
